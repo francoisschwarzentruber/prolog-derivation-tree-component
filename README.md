@@ -5,6 +5,8 @@ This repository contains the code for a Prolog derivation tree component. It is 
 
 ## Usage
 
-          <prolog-derivation-tree data-program='friend(a, b).
-            friend(a, c).' data-goal="friend(a, X).">
+          <prolog-derivation-tree
+            data-program='friend(a, b).
+            friend(a, c).'
+            data-goal="friend(a, X).">
           </prolog-derivation-tree>
