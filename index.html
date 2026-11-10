@@ -1,0 +1,22 @@
+<html>
+
+<head>
+  <script type="text/javascript" src="tau-prolog/core.js"></script>
+  <script type="text/javascript" src="tau-prolog/utils/draw-derivation-trees.js"></script>
+  <script type="text/javascript" src="prolog-derivation-tree-component.js"></script>
+</head>
+
+<body>
+
+  <prolog-derivation-tree data-program='powerset([], []).
+        powerset([_|T], P) :- powerset(T, P).
+        powerset([H|T], [H|P]) :- powerset(T, P).' data-goal="powerset([1,2,3], X).">
+  </prolog-derivation-tree>
+
+  <prolog-derivation-tree data-program='friend(a, b).
+    friend(a, c).' data-goal="friend(a, X).">
+  </prolog-derivation-tree>
+
+</body>
+
+</html>
